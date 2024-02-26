@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+.gallery-img {
+  display: none;
+  max-width: 600px;
+}
+
+.active {
+  display: block;
+}
+
+.image-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #0074d9;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}

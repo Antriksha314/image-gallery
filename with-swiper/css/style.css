@@ -68,5 +68,6 @@ body {
   margin: 0;
   font-size: 50px;
   cursor: grab;
+  position: relative;
   z-index: 10;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes bounce {
+        0% {
+          top: 100px;
+          animation-timing-function: ease-out;
+        }
+
+        25% {
+          top: 50px;
+          animation-timing-function: ease-in-out;
+        }
+
+        50% {
+          top: 100px;
+          animation-timing-function: ease-out;
+        }
+
+        75% {
+          top: 75px;
+          animation-timing-function: ease-in-out;
+        }
+
+        100% {
+          top: 100px;
+          animation-timing-function: ease-out;
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: translateX(0%);
+        }
+
+        to {
+          transform: translateX(100%);
+        }
+      }
+
+      @keyframes psychadelic {
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      .mole {
+        height: 240px;
+        width: 230px;
+        background-color: brown;
+        border-radius: 50%;
+      }
+
+      .color {
+        animation: psychadelic 3s linear infinite;
+      }
+
+      .spin {
+        animation: spin 6s ease-in-out infinite;
+      }
+
+      .bounce {
+        animation: bounce 5s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mole color">
+      <img class="mole spin" src="./images/images.png" alt="image" />
+    </div>
+    <img class="bounce" src="./images/images.png" alt="image" />
+  </body>
+</html>

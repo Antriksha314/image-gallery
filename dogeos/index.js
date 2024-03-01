@@ -1,5 +1,6 @@
 const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
 
+
 function addDoggo() {
   fetch(BREEDS_URL)
     .then(function (response) {
